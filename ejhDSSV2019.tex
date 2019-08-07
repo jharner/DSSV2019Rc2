@@ -1,0 +1,33 @@
+%ABSTRACT.TEX
+%Sample LaTeX file for an Abstract 
+%International conference Data Science, Statistics & Visualisation (DSSV 2019)  
+%http://iasc-isi.org/dssv2019/
+
+\documentstyle[12pt]{article}
+\setlength{\textwidth}{160mm}\setlength{\textheight}{240mm}
+\setlength{\oddsidemargin}{0mm}\setlength{\evensidemargin}{0mm}
+\setlength{\topmargin}{-10mm}
+\setlength{\parindent}{0mm} 
+\pagestyle{empty}	%no page number
+%\renewcommand{\refname}{\boldfont\selectfont\largesize References} 
+
+\begin{document}
+
+{\Large\bf From Docker to Kubernetes: Scaling Machine\\ Learning Algorithms}\\[4mm]
+
+E.~J. Harner$^a$ and M. Lilback$^b$\\ 				
+
+{\small \em $^a$West Virginia University, $^b$Rc$^2$ai}\\[3mm]
+
+Rc$^2$ (R Cloud Computing) is a collection of Docker containers for running R and Spark with various persistent data stores, including PostgreSQL, HDFS (Hadoop Distributed File System), Hive, etc. The core components of Rc$^2$ are an app server, a database server, and 0 or more R-based compute servers.  The user interacts with the app server through a native Rc$^2$ client.  Currently, the client supports R markdown documents and notebooks. Rc$^2$ can be run in single-user mode (running on a local machine or server) or in multi-user mode, typically run on a scalable cloud service.\\
+
+Kubernetes orchestrates these sets of running Docker containers and volumes, called pods, which are the smallest deployable unit within a cluster. Applications running in the same pod share the same IP address, the same port space, and the same namespace. Although deployment of pods can be done in different ways, e.g., as a traditional high-performance computing environment, the focus here is in scaling the number of Rc$^2$ users.\\
+
+Rc$^2$ uses Ingress for managing access by multiple users to the various supported services. This involves user authentication and the spawning of requested Rc$^2$ services. The canonical Rc$^2$ service is a pod running R and other tightly coupled applications, e.g., Java. Other services, e.g., PostgreSQL and Spark, are shared, stateful services and are made available to the user depending on the login request and the user's permissions. Kubernetes not only ensures that the dependencies among and within the requested pods are enforced, but also that the number of available pods always exceeds the number of running pods by a specified number.\\
+
+The power and flexibility of the Rc$^2$architecture is illustrated with several machine learning examples, which are available here: https://github.com/jharner/DSSV2019Rc2. \\
+
+\textbf{Keywords:} R, Spark, Docker containers, Kubernetes, Ingress.
+
+
+\end{document}
