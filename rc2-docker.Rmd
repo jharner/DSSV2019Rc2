@@ -139,9 +139,9 @@ docker run --rm -ti rocker/r-base
 
 RStudio can be run by:
 ```
-docker run --rm -p 8787:8787 rocker/rstudio
+docker run -e PASSWORD=pwd --rm -p 8787:8787 rocker/rstudio
 ```
-Open a browser with the URL `localhost:8787` and signin with user/password: `rstudio/rstudio`.
+Open a browser with the URL `localhost:8787` and signin with user/password: `rstudio/pwd`.
 
 ## Extending Images
 
@@ -164,7 +164,7 @@ Suppose you are writing a paper and you want it to be truly reproducible. At thi
 
 But the reasons go well beyond reproducibility.
 
-## Using Docker for Continuous Integration Deployment [DevOps]
+## Using Docker for Continuous Integration/Deployment [DevOps]
 
 Docker is a platform for containerized networking, compute, and storage for distributed applications. Docker improves: 
 
