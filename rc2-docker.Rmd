@@ -13,15 +13,19 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Important links
 
-[DSSV 2019 Talk: https://github.com/jharner/DSSV2019rc2](https://github.com/jharner/DSSV2019rc2)
+DSSV 2019 Talk: [https://github.com/jharner/DSSV2019rc2](https://github.com/jharner/DSSV2019rc2)
 
-[RSpark: https://github.com/jharner/rspark](https://github.com/jharner/rspark)
+RSpark: [https://github.com/jharner/rspark](https://github.com/jharner/rspark)
 
-[RSpark Tutorial: https://github.com/jharner/rspark-tutorial](https://github.com/jharner/rspark-tutorial)
+RSpark Tutorial: [https://github.com/jharner/rspark-tutorial](https://github.com/jharner/rspark-tutorial)
 
-[Rc$^2$ Server: https://github.com/rc2server](https://github.com/rc2server)
+Rc$^2$ Server: [https://github.com/rc2server](https://github.com/rc2server)
 
-[Rc$^2$ Swift Client: https://github.com/mlilback/rc2SwiftClient](https://github.com/mlilback/rc2SwiftClient)
+Rc$^2$ Swift Client: [https://github.com/mlilback/rc2SwiftClient](https://github.com/mlilback/rc2SwiftClient)
+
+Rocker Project: [https://www.rocker-project.org](https://www.rocker-project.org)
+
+Jupyter Docker Stacks: [https://github.com/jupyter/docker-stacks](https://github.com/jupyter/docker-stacks)
 
 ## DevOps for Data Science
 
@@ -217,7 +221,9 @@ Rc$^2$ has two components:
 
 - Rc$^2$ Client: written in Swift currently running on macOS and iOS.
 
-Rc$^2$ is being deployed to [Digital Ocean Kubernetes](https://www.digitalocean.com/products/kubernetes/).
+Rc$^2$ can be run locally in Docker containers and soon it will be deployed to [Digital Ocean Kubernetes](https://www.digitalocean.com/products/kubernetes/).
+
+Rc$^2$ is designed for data scientists---not package development. It is being designed to eliminate the hidden state problem of notebooks. See the talk by [Joel Grus at JupyterCon 2018](https://docs.google.com/presentation/d/1n2RlMdmv1p25Xy5thJUhkKGvjtV-dkAIsUXP-AL4ffI/edit#slide=id.g362da58057_0_1).
 
 ## Rc$^2$ Architecture
 
